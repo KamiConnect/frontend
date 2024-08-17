@@ -42,9 +42,9 @@ const SignupForm = () => {
           }}
         >
           Already a user?{" "}
-          <a href="" style={{ color: "#0474BA", textDecoration: "none" }}>
+          <Link to="/login" style={{ color: "#0474BA", textDecoration: "none" }}>
             Login
-          </a>
+          </Link>
         </p>
 
         <div style={{ display: "flex", gap: "30px" }}>
@@ -305,6 +305,20 @@ const SignupForm = () => {
               id=""
               placeholder="Institute email"
             />
+            <select name="" id="" style={{
+                padding: "10px",
+                width: "87%",
+                border: "none",
+                borderRadius: "5px",
+                borderColor: "#D1EDFE",
+                borderStyle: "solid",
+                borderWidth: "2px",
+              }}>
+                <option value="">Select the course</option>
+                <option value="">Computer science</option>
+                <option value="">Mathematics</option>
+                <option value="">English</option>
+            </select>
             <input
               style={{
                 padding: "10px",
