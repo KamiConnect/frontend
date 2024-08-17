@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const ChatBot = () => {
   const [messages, setMessages] = useState([
-    { text: "Hi👋 How can I help you with your university admissions?", isUser: false },
+    { text: "Hi👋 How can I help you with your university research?", isUser: false },
   ]);
   const [inputValue, setInputValue] = useState("");
 
@@ -26,10 +26,10 @@ const ChatBot = () => {
     let response = "";
 
     switch (true) {
-      case lastMessage.text.toLowerCase().includes("what universities"):
-        response = "We have partnerships with top universities like University of Rochester, Alfred University, and Carnegie Mellon University.";
+      case lastMessage.text.toLowerCase().includes("What are the admission requirements for the university?"):
+        response = "The admission requirements for the university vary depending on the program and course of study. Typically, universities require a minimum GPA, standardized test scores (e.g., SAT or ACT), letters of recommendation, and a personal statement or essay";
         break;
-      case lastMessage.text.toLowerCase().includes("admission requirements"):
+      case lastMessage.text.toLowerCase().includes("What are the academic programs and courses offered by the university?"):
         response = "Admission requirements vary by university, but typically include a high school diploma, SAT/ACT scores, and letters of recommendation.";
         break;
       case lastMessage.text.toLowerCase().includes("application deadline"):
