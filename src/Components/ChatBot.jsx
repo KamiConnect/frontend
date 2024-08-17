@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const ChatBot = () => {
   const [messages, setMessages] = useState([
-    { text: "Hi👋 How can I help you", isUser: false },
+    { text: "Hi👋 How can I help you with your university admissions?", isUser: false },
   ]);
   const [inputValue, setInputValue] = useState("");
 
@@ -25,10 +25,24 @@ const ChatBot = () => {
     const lastMessage = messages[messages.length - 1];
     let response = "";
 
-    if (lastMessage.text.toLowerCase().includes("package")) {
-      response = "Sorry to hear that. Can you please provide your tracking number?";
-    } else {
-      response = "I'm not sure I understand. Can you please rephrase your question?";
+    switch (true) {
+      case lastMessage.text.toLowerCase().includes("what universities"):
+        response = "We have partnerships with top universities like University of Rochester, Alfred University, and Carnegie Mellon University.";
+        break;
+      case lastMessage.text.toLowerCase().includes("admission requirements"):
+        response = "Admission requirements vary by university, but typically include a high school diploma, SAT/ACT scores, and letters of recommendation.";
+        break;
+      case lastMessage.text.toLowerCase().includes("application deadline"):
+        response = "Application deadlines vary by university, but typically range from December to February for fall semester admissions.";
+        break;
+      case lastMessage.text.toLowerCase().includes("scholarships"):
+        response = "Yes, we offer various scholarships to eligible students. Please check our website for more information.";
+        break;
+      case lastMessage.text.toLowerCase().includes("majors"):
+        response = "We offer a wide range of majors, including business, engineering, computer science, and more.";
+        break;
+      default:
+        response = "We are here to chat with you about colleges you want to get admitted to.";
     }
 
     setTimeout(() => {
@@ -37,7 +51,7 @@ const ChatBot = () => {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", justifyContent:"center", alignItems:"center", gap:"10px"}}>
+    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "10px" }}>
       {messages.map((message, index) => (
         <div
           key={index}
@@ -56,9 +70,26 @@ const ChatBot = () => {
         value={inputValue}
         onChange={handleInputChange}
         placeholder="Type a message..."
-        style={{ padding: "10px", borderWidth:"2px", borderColor:"#0474BA", borderStyle:"solid", borderRadius:"5px"}}
+        style={{
+          padding: "10px",
+          borderWidth: "2px",
+          borderColor: "#0474BA",
+          borderStyle: "solid",
+          borderRadius: "5px",
+        }}
       />
-      <button onClick={handleSendMessage} style={{width:"100%", padding: "10px 20px", border: "none", backgroundColor: "#0474BA", borderRadius: "5px", color: "#fff", fontWeight: "bold" }}>
+      <button
+        onClick={handleSendMessage}
+        style={{
+          width: "100%",
+          padding: "10px 20px",
+          border: "none",
+          backgroundColor: "#0474BA",
+          borderRadius: "5px",
+          color: "#fff",
+          fontWeight: "bold",
+        }}
+      >
         Send
       </button>
     </div>
