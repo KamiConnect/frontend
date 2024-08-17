@@ -37,12 +37,14 @@ const Home = () => {
             <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                 {showChatBot && <ChatBot />}
             </div>
-            <div style={{ color: "#0474BA", fontWeight: "bold", fontSize: "15px", display: "flex", justifyContent: "space-between", alignItems: "center", width: "75%", padding: "10px 30px", backgroundColor: "#DFE7EC", borderRadius: "10px" }}>
+           <div style={{display:"flex", flexDirection:"column", width:"100%", justifyContent:"center", alignItems:"center", gap:"20px"}}>
+           <div style={{ color: "#0474BA", fontWeight: "bold", fontSize: "15px", display: "flex", justifyContent: "space-between", alignItems: "center", width: "75%", padding: "10px 30px", backgroundColor: "#DFE7EC", borderRadius: "10px" }}>
                 African leadership University
             </div>
             <div style={{ color: "#0474BA", fontWeight: "bold", fontSize: "15px", display: "flex", justifyContent: "space-between", alignItems: "center", width: "75%", padding: "10px 30px", backgroundColor: "#DFE7EC", borderRadius: "10px" }}>
                 Carnegie Mellon University
             </div>
+           </div>
         </div>
     )
 }
