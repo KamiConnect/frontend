@@ -11,7 +11,7 @@ const MeetMentors = () => {
                 <div id="address" style={{ color: "#272727", fontSize: "15px", display: "flex", flexDirection: "column" }}>
                     <p>Dr. Karly Manis</p>
                     <p>University Rwanda</p>
-                    <a href="\" style={{textDecoration:"none"}}>Business Information Technology</a>
+                    <a href="\" style={{ textDecoration: "none" }}>Business Information Technology</a>
                 </div>
                 <div>
                     <Link to="/chat"><Icon icon="ep:arrow-right-bold" style={{ cursor: "pointer" }} /></Link>
