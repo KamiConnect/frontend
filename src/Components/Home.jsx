@@ -38,11 +38,13 @@ const Home = () => {
                 {showChatBot && <ChatBot />}
             </div>
            <div style={{display:"flex", flexDirection:"column", width:"100%", justifyContent:"center", alignItems:"center", gap:"20px"}}>
-           <div style={{ color: "#0474BA", fontWeight: "bold", fontSize: "15px", display: "flex", justifyContent: "space-between", alignItems: "center", width: "75%", padding: "10px 30px", backgroundColor: "#DFE7EC", borderRadius: "10px" }}>
-                African leadership University
+           <div style={{ color: "#0474BA", fontWeight: "bold", fontSize: "15px", display: "flex", flexDirection:"column", justifyContent: "space-between", alignItems: "start", width: "75%", padding: "10px 30px", backgroundColor: "#DFE7EC", borderRadius: "10px" }}>
+                <p>African leadership University</p>
+                <p>Computer Science</p>
             </div>
-            <div style={{ color: "#0474BA", fontWeight: "bold", fontSize: "15px", display: "flex", justifyContent: "space-between", alignItems: "center", width: "75%", padding: "10px 30px", backgroundColor: "#DFE7EC", borderRadius: "10px" }}>
-                Carnegie Mellon University
+            <div style={{ color: "#0474BA", fontWeight: "bold", fontSize: "15px", display: "flex",flexDirection:"column", justifyContent: "space-between", alignItems: "start", width: "75%", padding: "10px 30px", backgroundColor: "#DFE7EC", borderRadius: "10px" }}>
+                <p>Carnegie Mellon University</p>
+                <p>Computer Science</p>
             </div>
            </div>
         </div>
