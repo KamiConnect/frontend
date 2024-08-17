@@ -4,17 +4,17 @@ import Ongoing from "../Components/Ongoing";
 import SignupForm from "../Components/SignupForm";
 
 const Login = () => {
-    return (
-        <div style={{}}>
-            {/* <div>
+  return (
+    <div style={{}}>
+      {/* <div>
                 <Navbar />
                 <Ongoing />
             </div> */}
-            <div>
-                <SignupForm />
-            </div>
-        </div>
-    )
-}
+      <div>
+        <SignupForm />
+      </div>
+    </div>
+  );
+};
 
 export default Login;
