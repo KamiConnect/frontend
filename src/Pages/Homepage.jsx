@@ -8,7 +8,6 @@ const Homepage=()=>{
         <div style={{display:"flex", flexDirection:"column", gap:"10px"}}>
             <Navbar />
             <Home />
-            <ChatBot />
         </div>
     )
 }

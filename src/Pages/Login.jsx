@@ -95,7 +95,7 @@ const Login = () => {
           Your data is secure with us
         </p>
         <Link
-          to="/login"
+          to="/home"
           style={{
             width: "40%",
             padding: "10px",

@@ -3,7 +3,6 @@ import React, { useState } from "react";
 const ChatBot = () => {
   const [messages, setMessages] = useState([
     { text: "Hi👋 How can I help you", isUser: false },
-    { text: "Looking for my package", isUser: true },
   ]);
   const [inputValue, setInputValue] = useState("");
 
@@ -38,7 +37,7 @@ const ChatBot = () => {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ display: "flex", flexDirection: "column", justifyContent:"center", alignItems:"center", gap:"10px"}}>
       {messages.map((message, index) => (
         <div
           key={index}
@@ -57,9 +56,9 @@ const ChatBot = () => {
         value={inputValue}
         onChange={handleInputChange}
         placeholder="Type a message..."
-        style={{ padding: "10px", width: "100%" }}
+        style={{ padding: "10px", borderWidth:"2px", borderColor:"#0474BA", borderStyle:"solid", borderRadius:"5px"}}
       />
-      <button onClick={handleSendMessage} style={{ padding: "10px", width: "100%" }}>
+      <button onClick={handleSendMessage} style={{width:"100%", padding: "10px 20px", border: "none", backgroundColor: "#0474BA", borderRadius: "5px", color: "#fff", fontWeight: "bold" }}>
         Send
       </button>
     </div>
