@@ -4,6 +4,7 @@ import alu from "../Assets/alu.png"
 import cmu from "../Assets/cmu.png"
 import students from "../Assets/grad.png"
 import ChatBot from "../Components/ChatBot";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     const [showChatBot, setShowChatBot] = useState(false);
@@ -25,7 +26,7 @@ const Home = () => {
                     </div>
                     <p style={{ color: "#0474BA", fontWeight: "normal", fontSize: "20px" }}>'Now secure your future with online'</p>
                     <div style={{ display: "flex", gap: "40px" }}>
-                        <button style={{ padding: "10px 20px", border: "none", backgroundColor: "#0474BA", borderRadius: "5px", color: "#fff", fontWeight: "bold" }}>Meet college mentors</button>
+                        <Link to="/meet" style={{ padding: "10px 20px", border: "none", textDecoration:"none", backgroundColor: "#0474BA", borderRadius: "5px", color: "#fff", fontWeight: "bold" }}>Meet college mentors</Link>
                         <button onClick={handleChatWithUsClick} style={{ padding: "10px 20px", border: "none", borderColor: "#0474BA", borderStyle: "solid", borderWidth: "1px", borderRadius: "5px", color: "#0474BA", fontWeight: "bold" }}>Chat with us</button>
                     </div>
                 </div>

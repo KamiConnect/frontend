@@ -51,11 +51,12 @@ const ChatBot = () => {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "10px" }}>
+    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height:"100vh", gap: "10px" }}>
       {messages.map((message, index) => (
         <div
           key={index}
           style={{
+            width:"50%",
             backgroundColor: message.isUser ? "#0474BA" : "#F4F4F4",
             padding: "10px",
             borderRadius: "10px",
@@ -71,6 +72,7 @@ const ChatBot = () => {
         onChange={handleInputChange}
         placeholder="Type a message..."
         style={{
+           width:"50%", 
           padding: "10px",
           borderWidth: "2px",
           borderColor: "#0474BA",
@@ -81,7 +83,7 @@ const ChatBot = () => {
       <button
         onClick={handleSendMessage}
         style={{
-          width: "100%",
+          width: "35%",
           padding: "10px 20px",
           border: "none",
           backgroundColor: "#0474BA",
