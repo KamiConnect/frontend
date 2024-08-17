@@ -4,7 +4,7 @@ import "../Styles/navbar.css"
 
 const Navbar = () =>{
     return(
-        <div className="navbar-container" style={{ background:"#E9E9E9",display:"flex", padding: "0 40px", justifyContent:"space-between", alignItems:"center"}}>
+        <div className="navbar-container" style={{ background:"#fff",display:"flex", padding: "0 40px", justifyContent:"space-between", alignItems:"center"}}>
             <div style={{color:"#0474BA"}}>
                 <p className="app-name" style={{fontWeight:"bold", fontSize:"25px"}}>KamiConnect</p>
             </div>

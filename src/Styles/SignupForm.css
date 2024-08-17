@@ -1,0 +1,11 @@
+button{
+    cursor: pointer;
+}
+#signup-button, #user-button, #institute-button{
+    background-color: #0474BA;
+}
+#signup-button:hover, #user-button:hover, #institute-button:hover{
+    background-color: #CBEBFF;
+    
+}
+
